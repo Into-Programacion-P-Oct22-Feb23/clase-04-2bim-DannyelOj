@@ -20,10 +20,19 @@ public class Ejemplo01 {
         
         String miCiudad = obtenerCiudadMayuscula("Loja");
         System.out.printf("%s\n", miCiudad);
+        
+        String nombre = obtenerNombre();
+        System.out.printf("%s\n", nombre);
+        
+        //opcion 1
+        String mensajeR = obtenerNombre();
+        System.out.printf("%s\n", mensajeR);
+        //opcion 2
+        System.out.printf("%s\n", obtenerNombre());
     }
     
     
-    public String obtenerCiudadMayuscula(String m){
+    public static String obtenerCiudadMayuscula(String m){
         String m2 = m.toUpperCase();
         return m2;
     }
